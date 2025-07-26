@@ -1,0 +1,264 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "69634ea1-30ed-4342-be1c-8ee7aed02298",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Twinkle,twinkle,little star\n",
+      " How I wonder what you are!\n",
+      "   Up above the world so high\n",
+      "     Like a diamond in the sky\n",
+      "Twinkle,twinkle,little star\n",
+      " How I wonder what you are!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Twinkle,twinkle,little star\") \n",
+    "print(\" How I wonder what you are!\")\n",
+    "print(\"   Up above the world so high\") \n",
+    "print(\"     Like a diamond in the sky\") \n",
+    "print(\"Twinkle,twinkle,little star\") \n",
+    "print(\" How I wonder what you are!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "b28fb392-f0da-4bd7-b5b2-c526cedfdc65",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Python version\n",
+      "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import sys \n",
+    "print(\"Python version\") \n",
+    "print(sys.version) \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8308a0ac-6d1e-4cf4-ad85-b59d9a6efb93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Current Date and Time: 2025-07-26 15:33:39.169864\n"
+     ]
+    }
+   ],
+   "source": [
+    "import datetime \n",
+    "current_datetime = datetime.datetime.now()\n",
+    "print(\"Current Date and Time:\", current_datetime) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "94e878d0-aba3-4692-9a47-ab375f50e48c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the radius of the circle 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Area is 78.53981633974483\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math \n",
+    "radius = int(input(\"Enter the radius of the circle\"))\n",
+    "area = math.pi * radius**2 \n",
+    "print(\"Area is\",area)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "97379a0b-6830-438f-abae-30f16fd67709",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your first name:  kulsoom\n",
+      "Enter your last name- raza khan\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "kulsoom raza khan\n"
+     ]
+    }
+   ],
+   "source": [
+    "first_name = input(\"Enter your first name: \") \n",
+    "last_name = input(\"Enter your last name-\") \n",
+    "print(first_name +\" \"+last_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "4f6754fd-9528-4243-91b9-ec1847dd811c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first num:  10\n",
+      "Enter the second num:  15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The sum is: 25\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1 = int(input(\"Enter the first num: \")) \n",
+    "num2 = int(input(\"Enter the second num: \")) \n",
+    "sum_result = num1 + num2 \n",
+    "print(\"The sum is:\", sum_result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "84137c7a-2af5-4122-9916-e626e5911093",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter marks for Subject 1: 98\n",
+      "Enter marks for Subject 2:  88\n",
+      "Enter marks for Subject 3:  78\n",
+      "Enter marks for Subject 4:  68\n",
+      "Enter marks for Subject 5:  58\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "B\n"
+     ]
+    }
+   ],
+   "source": [
+    "subject1 = int(input(\"Enter marks for Subject 1:\")) \n",
+    "subject2 = int(input(\"Enter marks for Subject 2: \")) \n",
+    "subject3 = int(input(\"Enter marks for Subject 3: \")) \n",
+    "subject4 =int(input(\"Enter marks for Subject 4: \")) \n",
+    "subject5 = int(input(\"Enter marks for Subject 5: \")) \n",
+    "total_marks = subject1 + subject2 + subject3 + subject4 + subject5 \n",
+    "average_marks = total_marks/5 \n",
+    "percentage = (total_marks / 500) * 100\n",
+    "if percentage >= 90: \n",
+    "   print(\"A+\") \n",
+    "elif percentage >= 80: \n",
+    "   print(\"A\") \n",
+    "elif percentage >= 70: \n",
+    "   print(\"B\") \n",
+    "elif percentage >= 60: \n",
+    "   print(\"C\") \n",
+    "elif percentage >= 50: \n",
+    "   print(\"D\")\n",
+    "else: \n",
+    "   print(\"F\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "98ffb8e9-9f6b-4166-a016-d8ea68d6ae40",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 56\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "number is an even number.\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = int(input(\"\")) \n",
+    "if number % 2 == 0: \n",
+    " print(\"number is an even number.\") \n",
+    "else: \n",
+    " print(\"number is an odd number\") "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "13e93acb-415b-4527-843c-10d63475a587",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
